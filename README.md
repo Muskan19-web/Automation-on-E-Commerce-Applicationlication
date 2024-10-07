@@ -1,116 +1,76 @@
 # cypressConstructweek2
-Functionality - Register, Login, Logout
-Cypress Automation Project:
-TutorialsNinja - Register, Login, Logout
-Objective
-This project automates the user flow for Register, Login, and Logout functionality on the
-TutorialsNinja website using Cypress.
-Tools and Technologies Used
- - Programming Language: JavaScript
- - Automation Framework: Cypress
- - Browser: Chrome or Electron (Default Browser)
- - IDE/Text Editor: Visual Studio Code (VSCode)
- - Version Control: GitHub
-
-Prerequisites
-To successfully run this project, ensure you have the following:
-- Basic knowledge of JavaScript.
-- Familiarity with Cypress and basic web elements such as id, class, and name.
-- Installed Node.js and Visual Studio Code.
-Setup Instructions
-Part 1: Environment Setup
-1. Install VSCode:
- - Download and install VSCode from its official website.
-2. Create a New Folder for the Project:
- - Open VSCode and create a new folder for the Cypress automation project.
-3. Install Cypress:
- - Open the terminal in VSCode and run the following commands to initialize the project
-and install Cypress:
- ```
- npm init -y
- npm install cypress --save-dev
- ```
- - Open Cypress once installed:
- ```
- npx cypress open
- ```
-Part 2: Writing the Script
-1. Create a New Folder Structure:
- - Create folders to organize the Page Object Model (POM):
- - cypress/integration/PageTests: For test cases.
- - cypress/support/PageClasses: For commands and functions.
- - cypress/pages/: For Page Object files.
-2. Install Required Dependencies:
- - If needed, install additional Cypress plugins or dependencies via npm.
-Part 3: Assignment Tasks Automation
-1. Register New Account:
- - Automate the registration process by filling out required fields (First Name, Last Name,
-Email, etc.) and submitting the form.
-2. Login and Logout:
- - Log in using the test credentials and automate the logout process.
- - Take screenshots where required and use assertions for validation.
-Part 4: Submission Guidelines
-1. Push Code to GitHub:
- - After completing the script, initialize a Git repository and push the project to GitHub:
- ```
- git init
- git add .
- git commit -m 'Initial commit for Cypress automation project'
- git remote add origin https://github.com/Kunal-30/Global-Code-Innovators_083.git
- git push -u origin main
- ```
-2. Submission:
- - Ensure the code is properly commented, explaining each section and logic.
- - Push the final code to GitHub and submit the repository link on the LMS.
-Project Structure
-```
-├── cypress
-│ ├── integration
-│ │ PageTests # test1.js
-│ ├── PageClasses
-│ │ ├── RegisterPage.js # Register Page Object
-│ │ ├── LoginPage.js # Login Page Object
-│ │ ├── LogoutPage.js # Logout Page Object
-│ ├── support
-│ │ └── commands.js # Custom Cypress commands (if any)
-├── cypress.json # Cypress conϐiguration ϐile
-├── package.json # Project dependencies
-```
-Test Data
-Use the following test data:
-- Email: tagdekunal2000@gmail.com
-- Password: Lazy123
-Cypress Commands Used
-- cy.get(): To locate web elements.
-- cy.type(): To enter data into input fields.
-- cy.click(): To simulate button clicks.
-- cy.contains(): To locate text or buttons by their content.
-- cy.url(): To assert URL changes.
-Key Features
-- Page Object Model (POM): The project is structured using POM for maintainability.
-- Assertions: Use of Cypress assertions for validating success of registration, login, and
-logout actions.
-- Screenshots: Automatically take screenshots after each major action.
-How to Run the Tests
-1. Clone the repository:
- ```bash
- git clone <repository-url>
- cd <project-folder>
- ```
-2. Install project dependencies:
- ```bash
- npm install
- ```
-3. Run Cypress tests:
- ```bash
- npx cypress open
- ```
- - This will open the Cypress Test Runner. You can then select the test files to run.
-Evaluation Criteria
-- Correctness: The script should successfully automate the register, login, and logout
-process.
-- Code Quality: Proper use of functions, error handling, and code readability.
-- Documentation: Proper comments and explanation for each section of the script.
-Conclusion
-This project demonstrates automation of the TutorialsNinja website using Cypress,
-following best practices like POM, assertions, and GitHub integration for code versioning. 
+2 #Java 
+Construct Week: Java Programs for
+Stack Operations and String
+Manipulation
+Project Overview
+This project contains Java implementations of two primary tasks:
+1. Removing vowels from a given string.
+2. Implementing a stack using an array.
+File Structure:
+Construct_Week/
+│
+├── ArrayStack.java # Implementation of Stack using Array
+├── Operations_on_Stack.java # Main ϐile to demonstrate Stack operations
+└── RemoveVowels.java # Program to remove vowels from a given string
+Task Details
+Question 1: Remove Vowels from a String
+Objective:
+Write a Java program that removes all vowels from a given string.
+Files Involved:
+- RemoveVowels.java
+Functionality:
+- The program prompts the user to enter a string.
+- The vowels are removed from the string using a custom method.
+- The modified string is displayed with all vowels removed.
+Sample Input and Output:
+Input: Enter a string: hello, world!
+Output: The string with vowels removed is: hll, wrld!
+Question 2: Implement a Stack using an Array
+Objective:
+Implement a stack using an array in Java with the following functionalities:
+- push: Adds an element to the top of the stack.
+- pop: Removes and returns the top element.
+- peek: Returns the top element without removing it.
+- isEmpty: Checks if the stack is empty.
+Files Involved:
+- ArrayStack.java
+- Operations_on_Stack.java
+Functionality:
+- ArrayStack is the core class that defines the stack using an array.
+- Operations_on_Stack.java demonstrates the stack operations such as push, pop, peek, and
+checking if the stack is empty.
+Sample Input and Output:
+Stack Operations:
+1. Push
+2. Pop
+3. Peek
+4. Check if Empty
+5. Exit
+Enter your choice: 1
+Enter an element to push: 10
+Element pushed successfully.
+Enter your choice: 1
+Enter an element to push: 20
+Element pushed successfully.
+Enter your choice: 3
+Top element: 20
+Enter your choice: 2
+Popped element: 20
+Enter your choice: 4
+Stack is not empty.
+Enter your choice: 5
+Exiting...
+Requirements
+- Java Development Kit (JDK) installed.
+- Basic understanding of Java programming concepts.
+How to Run the Project
+1. Clone the repository or download the project.
+2. Compile the .java files:
+ javac RemoveVowels.java
+ javac ArrayStack.java Operations_on_Stack.java
+3. Run the files:
+ java RemoveVowels
+ java Operations_on_Stack
+Author
+Muskan Patel
